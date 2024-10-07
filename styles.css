@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-black: #1f1d1d;
+    --color-white: #f7f2f2;
+    --color-gray: #e3dede;
+    --color-green: #bcc4b9;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-white);
+    overflow-y: scroll;
+}
+
+i {
+    color: var(--color-black);
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.item1 {
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+.item2 {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
