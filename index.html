@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
 
-        <link rel="icon" type="image/favicon-icon" href="./favicon.ico">
+        <link rel="icon" type="image/favicon-icon" href="./favicon.svg">
         <script src="https://kit.fontawesome.com/41364eba84.js" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="./styles.css">
@@ -25,24 +25,32 @@
     <body>
         <section class="gridContainer">
             <nav class="gridNav">
-                <h1>Black Circle</h1>
-                <ol>
-                    <li>Add Product</li>
-                    <li>Dashboard</li>
-                    <li>Products</li>
-                    <li>My Orders</li>
-                    <li>Chats</li>
-                    <li>Your Profile</li>
-                </ol>
+                <h1>
+                    <img id="logo" src="./favicon.svg" alt="black circle">
+                    Black Circle</h1>
+                <ul style="list-style-type: none">
+                    <li id="blackButton">Add Product</li>
+                    <li class="button"><h3>Dashboard</h3></li>
+                    <li class="button">Products
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="button">My Orders</li>
+                    <li class="button">Chats</li>
+                    <li class="button">Your Profile</li>
+                </ul>
             </nav>
             <header class="gridHeader">
                 <i class="far fa-bell fa-s"></i>
-                <img id="profilePhoto" src="./profilePhoto.jpg" alt="Profile Photo">
-                <h2>Anna Asol</h2>
-                <i class="fa-solid fa-chevron-down"></i>
+
+                <div class="profile">
+                    <img id="profilePhoto" src="./profilePhoto.jpg" alt="Profile Photo">
+                    <h3>Anna Asol</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                
             </header>
             <main class="gridMain">
-                <h1>Dashboard</h1>
+                <h2>Dashboard</h2>
             </main>
         </section>
     </body>
