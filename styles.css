@@ -7,7 +7,7 @@
 }
 
 :root {
-    --color-black: #1f1d1d;
+    --color-black: #312e2e;
     --color-white: #f7f2f2;
     --color-gray: #e3dede;
     --color-green: #bcc4b9;
@@ -17,28 +17,46 @@ body {
     min-height: 100vh;
     background-color: var(--color-white);
     overflow-y: scroll;
+    color: var(--color-black);
+    font-family: "Playfair Display";
 }
 
 i {
     color: var(--color-black);
+    font-size: 1rem;
+}
+
+#profilePhoto {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    object-position: 70%;
+    border-radius: 50%;
 }
 
 .gridContainer {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 10% auto;
 }
 
-.item1 {
+.gridNav {
     grid-column: 1;
     grid-row: 1 / 2;
 }
 
-.item2 {
+.gridHeader {
     grid-column: 2;
     grid-row: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 1.5rem;
+    padding: 2rem;
+}
+
+.gridMain {
+    grid-column: 2;
+    grid-row: 2;
 }
 
