@@ -31,7 +31,7 @@ body {
     border-radius: 50%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h5 {
     font-family: "Playfair Display";
 }
 
@@ -140,16 +140,13 @@ button:hover {
     background-color: var(--color-white);
     border-radius: 10px;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
 }
 
 .gridStats h5 {
-    font-family: "Playfair Display";
     padding-bottom: 1rem;
-}
-
-.gridStats .number {
-    font-family: "Playfair Display";
-    font-weight: 900;
 }
 
 .gridStats .totSales {
@@ -167,6 +164,38 @@ button:hover {
     grid-row: 1;
 }
 
+.gridStats div .number {
+    font-family: "Playfair Display";
+    font-weight: 900;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.gridStats div .trend {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.gridStats div .trend i {
+    padding: 0;
+    font-size: .7rem;
+    color: #40a626;
+}
+
+.gridStats div .trend .percentage {
+    font-weight: 500;
+    font-size: .8rem;
+    color: #40a626;
+}
+
+.gridStats div .trend.negative i {
+    color: red;
+}
+
+.gridStats div .trend.negative .percentage {
+    color: red;
+}
+
 .gridStats .revenue {
     grid-column: 1 / span 2;
     grid-row: 2;
@@ -175,4 +204,28 @@ button:hover {
 .gridStats .sales {
     grid-column: 3;
     grid-row: 2;
+}
+
+.gridStats div p.category {
+    font-weight: 550;
+    font-size: .8rem;
+}
+
+.gridStats div table {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    width: 100%;
+    border-spacing: 0;
+}
+
+th {
+    color: #acaaaa;
+    font-size: .8rem;
+    text-align: left;
+}
+
+td {
+    font-weight: 550;
+    font-size: .8rem;
+    text-align: left;
 }
