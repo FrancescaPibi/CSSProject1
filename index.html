@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
 
-        <link rel="icon" type="image/favicon-icon" href="./favicon.svg">
+        <link rel="icon" type="image/favicon-icon" href="./img/favicon.svg">
         <script src="https://kit.fontawesome.com/41364eba84.js" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="./styles.css">
@@ -26,7 +26,7 @@
         <section class="mainContainer">
             <nav class="gridNav">
                 <h1>
-                    <img id="logo" src="./favicon.svg" alt="black circle">
+                    <img id="logo" src="./img/favicon.svg" alt="black circle">
                     Black Circle</h1>
                 <button type="button" id="blackButton">
                     <i class="fas fa-plus"></i>
@@ -53,7 +53,7 @@
                 <i class="far fa-bell fa-s"></i>
 
                 <div class="profile">
-                    <img id="profilePhoto" src="./profilePhoto.jpg" alt="Profile Photo">
+                    <img id="profilePhoto" src="./img/profilePhoto.jpg" alt="Profile Photo">
                     <h3>Anna Asol</h3>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
@@ -89,17 +89,48 @@
                     <div class="revenue">
                         <h5>Revenue analytics</h5>
                         <p class="category">Yearly</p>
-                        <img src="./columnChart.webp" alt="column chart sample">
+                        <img src="./img/columnChart.webp" alt="column chart sample">
                     </div>
                     <div class="sales">
                         <h5>Sales by category</h5>
                         <p class="category">By week</p>
-                        <img src="./pieChart.jpg" alt="pie chart sample">
+                        <img src="./img/pieChart.jpg" alt="pie chart sample">
+                        <div class="salesCat">
+                            <div class="item1">
+                                <h5>Source</h5>
+                                <h6><img src="./img/pink.png" alt="pink color">Dress</h6>
+                                <h6><img src="./img/gray.png" alt="gray colro">Shoes</h6>
+                                <h6><img src="./img/darkGreen.png" alt="dark green color">Bags</h6>
+                                <h6><img src="./img/lightGreen.png" alt="ligth green color">T-shirts</h6>                            
+                            </div>
+                            <div class="item2">
+                                <h5>Orders</h5>
+                                <h6>22</h6>
+                                <h6>27</h6>
+                                <h6>10</h6>
+                                <h6>25</h6>
+                            </div>
+                            <div class="item3">
+                                <h5>Amount</h5>
+                                <h6>$2,742.00</h6>
+                                <h6>$3,272.00</h6>
+                                <h6>$2,303.00</h6>
+                                <h6>$2,922.00</h6>
+                            </div>
+                        </div>
                     </div>
                 </section>
-
+               
+                <section class="recentOrders">
                     <h2>Recent Orders</h2>
-                    <section class="orders"></section>
+                    <div id="orderBar">
+                        ID
+                        PRODUCT
+                        PRICE SUM
+                        STATUS
+                        ACTION
+                    </div> 
+                </section>
                 </section>
             </main>
         </section>
