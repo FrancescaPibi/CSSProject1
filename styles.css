@@ -309,7 +309,8 @@ button:hover {
     color: rgb(236, 158, 171);
 }
 
-.recentOrders h6.status {
+.recentOrders h6 span.status {
+    display: inline-block;
     color: rgb(236, 158, 171);
     background-color: rgb(243, 199, 206);
     border-radius: 50px;
