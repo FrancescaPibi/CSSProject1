@@ -2,7 +2,7 @@
 <html lang="en US">
     <head>
         <title>Black Circle</title>
-        <meta name="description" content="Fashion web app for clothing resale">
+        <meta name="description" content="Fashion webapp for clothing resale">
         <meta name="author" content="Francesca Pibi">
         <meta name="keywords" content="fashion, clothes, resale">
 
@@ -10,9 +10,8 @@
         <meta name="viewport" content="width=device-width, initial scale=1.0">
 
         <link rel="icon" type="image/favicon-icon" href="./img/favicon.svg">
-        <script src="https://kit.fontawesome.com/41364eba84.js" crossorigin="anonymous"></script>
-        
         <link rel="stylesheet" href="./styles.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -20,154 +19,160 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/41364eba84.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <section class="mainContainer">
-            <nav class="gridNav">
-                <h1>
-                    <img id="logo" src="./img/favicon.svg" alt="black circle">
-                    Black Circle</h1>
-                <button type="button" id="blackButton">
-                    <i class="fas fa-plus"></i>
-                    Add Product</button>
-                <button type="button">
-                    <h3><i class="fa-solid fa-house"></i>
-                    Dashboard</h3></button>
-                <button type="button">
-                    <i class="fas fa-cart-shopping"></i>
-                    Products
-                    <i class="fas fa-chevron-down"></i></button>
-                <button type="button">
-                    <i class="fas fa-folder"></i>
-                    My Orders</button>
-                <button type="button">
-                    <i class="fas fa-message"></i>
-                    Chats</button>
-                <button type="button">
-                    <i class="fas fa-user"></i>
-                    Your Profile</button>    
-            </nav>
+        <nav>
+            <h1>
+                <img id="logo" src="./img/favicon.svg" alt="black circle">
+                Black Circle
+            </h1>
+            <button type="button" id="blackButton">
+                <i class="fas fa-plus"></i>
+                Add Product
+            </button>
+            <button type="button">
+                <h3><i class="fa-solid fa-house"></i>
+                Dashboard</h3>
+            </button>
+            <button type="button">
+                <i class="fas fa-cart-shopping"></i>
+                Products
+                <i class="fas fa-chevron-down" style="padding-left: 1.7rem"></i>
+            </button>
+            <button type="button">
+                <i class="fas fa-folder"></i>
+                My Orders
+            </button>
+            <button type="button">
+                <i class="fas fa-message"></i>
+                Chats
+            </button>
+            <button type="button">
+                <i class="fas fa-user"></i>
+                Your Profile
+            </button>    
+        </nav>
 
-            <header class="gridHeader">
-                <i class="far fa-bell fa-s"></i>
+        <header>
+            <i class="far fa-bell fa-s"></i>
 
-                <div class="profile">
-                    <img id="profilePhoto" src="./img/profilePhoto.jpg" alt="Profile Photo">
-                    <h3>Anna Asol</h3>
-                    <i class="fa-solid fa-chevron-down"></i>
+            <div class="profile">
+                <img id="profilePhoto" src="./img/profilePhoto.jpg" alt="Profile Photo">
+                <h3>Anna Asol</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </header>
+
+        <main>
+            <h2>Dashboard</h2>
+            <section class="dashboard">
+                <div class="totSales">
+                    <h5>Total sales</h5>
+                    <span class="number">$3799</span>
+                    <span class="trend">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <span class="percentage">25%</span>
+                    </span>
+                </div>    
+                <div class="avgOrder">
+                    <h5>Average order value</h5>
+                    <span class="number">$272.98</span>
+                    <span class="trend negative">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <span class="percentage">15%</span>
+                    </span>
                 </div>
-            </header>
-
-            <main class="gridMain">
-                <h2>Dashboard</h2>
-                <section class="stats">
-                    <div class="totSales">
-                        <h5>Total sales</h5>
-                        <p class="number">$3799</p>
-                        <p class="trend">
-                            <i class="fa-solid fa-arrow-up"></i>
-                            <span class="percentage">25%</span>
-                        </p>
-                    </div>    
-                    <div class="avgOrder">
-                        <h5>Average order value</h5>
-                        <p class="number">$272.98</p>
-                        <p class="trend negative">
-                            <i class="fa-solid fa-arrow-down"></i>
-                            <span class="percentage">15%</span>
-                        </p>
-                    </div>
-                    <div class="totOrders">
-                        <h5>Total orders</h5>
-                        <p class="number">578</p>
-                        <p class="trend">
-                            <i class="fa-solid fa-arrow-up"></i>
-                            <span class="percentage">44%</span>
-                        </p>
-                    </div>
-                    <div class="revenue">
-                        <h5>Revenue analytics</h5>
-                        <p class="category">Yearly</p>
-                        <img src="./img/columnChart.webp" alt="column chart sample">
-                    </div>
-                    <div class="sales">
-                        <h5>Sales by category</h5>
-                        <p class="category">By week</p>
-                        <img src="./img/pieChart.jpg" alt="pie chart sample">
-                        <div class="salesCat">
-                            <div class="item1">
-                                <h5>Source</h5>
-                                <h6><img src="./img/pink.png" alt="pink color">Dress</h6>
-                                <h6><img src="./img/gray.png" alt="gray colro">Shoes</h6>
-                                <h6><img src="./img/darkGreen.png" alt="dark green color">Bags</h6>
-                                <h6><img src="./img/lightGreen.png" alt="ligth green color">T-shirts</h6>                            
-                            </div>
-                            <div class="item2">
-                                <h5>Orders</h5>
-                                <h6>22</h6>
-                                <h6>27</h6>
-                                <h6>10</h6>
-                                <h6>25</h6>
-                            </div>
-                            <div class="item3">
-                                <h5>Amount</h5>
-                                <h6>$2,742.00</h6>
-                                <h6>$3,272.00</h6>
-                                <h6>$2,303.00</h6>
-                                <h6>$2,922.00</h6>
-                            </div>
+                <div class="totOrders">
+                    <h5>Total orders</h5>
+                    <span class="number">578</span>
+                    <span class="trend">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <span class="percentage">44%</span>
+                    </span>
+                </div>
+                <div class="revenue">
+                    <h5>Revenue analytics</h5>
+                    <span class="timeFrame">Yearly</span>
+                    <img src="./img/columnChart.webp" alt="column chart sample">
+                </div>
+                <div class="sales">
+                    <h5>Sales by category</h5>
+                    <span class="timeFrame">By week</span>
+                    <img src="./img/pieChart.jpg" alt="pie chart sample">
+                    <div class="salesTable">
+                        <div class="item1">
+                            <h5>Source</h5>
+                            <h6><img src="./img/pink.png" alt="pink color">Dress</h6>
+                            <h6><img src="./img/gray.png" alt="gray colro">Shoes</h6>
+                            <h6><img src="./img/darkGreen.png" alt="dark green color">Bags</h6>
+                            <h6><img src="./img/lightGreen.png" alt="ligth green color">T-shirts</h6>                            
+                        </div>
+                        <div class="item2">
+                            <h5>Orders</h5>
+                            <h6>22</h6>
+                            <h6>27</h6>
+                            <h6>10</h6>
+                            <h6>25</h6>
+                        </div>
+                        <div class="item3">
+                            <h5>Amount</h5>
+                            <h6>$2,742.00</h6>
+                            <h6>$3,272.00</h6>
+                            <h6>$2,303.00</h6>
+                            <h6>$2,922.00</h6>
                         </div>
                     </div>
-                </section>
-               
-                <h2>Recent Orders</h2>
-                <section class="recentOrders">
-                    <div id="bar">
-                        <h5>ID</h5>
-                        <h5>PRODUCT</h5>
-                        <h5>PRICE SUM</h5>
-                        <h5>STATUS</h5>
-                        <h5>ACTION</h5>
-                    </div> 
-                    <div class="row number1">
-                        <h6>#4563</h6>
-                        <h6>Guess Evening Dress (3)</h6>
-                        <h6 class="price">$280</h6>
-                        <h6><span class="status">On Request</span></h6>
-                        <h6 class="action">Open Order</h6>
-                    </div>
-                    <div class="row number2">
-                        <h6>#4563</h6>
-                        <h6>Patrizia Pepe Cocktail Dress (3)</h6>
-                        <h6 class="price">$280</h6>
-                        <h6><span class="status">On Request</span></h6>
-                        <h6 class="action">Open Order</h6>                       
-                    </div>
-                    <div class="row number3">
-                        <h6>#4563</h6> 
-                        <h6>Pinko Evening Pink Dress (3)</h6>
-                        <h6 class="price">$280</h6>
-                        <h6><span class="status">On Request</span></h6>
-                        <h6 class="action">Open Order</h6>
-                    </div>
-                    <div class="row number4">
-                        <h6>#4563</h6>
-                        <h6>Twinset Cocktail Dress (3)</h6>
-                        <h6 class="price">$280</h6>
-                        <h6><span class="status">On Request</span></h6>
-                        <h6 class="action">Open Order</h6>
-                    </div>
-                    <div class="row number5">
-                        <h6>#4563</h6>
-                        <h6>Pinko Evening Dress (3)</h6>
-                        <h6 class="price">$280</h6>
-                        <h6><span class="status">On Request</span></h6>
-                        <h6 class="action">Open Order</h6>
-                    </div>
-                </section>
-                </section>
-            </main>
-        </section>
+                </div>
+            </section>
+            
+            <h2>Recent Orders</h2>
+            <section class="recentOrders">
+                <div id="bar">
+                    <h5>ID</h5>
+                    <h5>PRODUCT</h5>
+                    <h5>PRICE SUM</h5>
+                    <h5>STATUS</h5>
+                    <h5>ACTION</h5>
+                </div> 
+                <div class="row number1">
+                    <h6>#4563</h6>
+                    <h6>Guess Evening Dress (3)</h6>
+                    <h6 class="price">$280</h6>
+                    <h6><span class="status">On Request</span></h6>
+                    <h6 class="action">Open Order</h6>
+                </div>
+                <div class="row number2">
+                    <h6>#4563</h6>
+                    <h6>Patrizia Pepe Cocktail Dress (3)</h6>
+                    <h6 class="price">$280</h6>
+                    <h6><span class="status">On Request</span></h6>
+                    <h6 class="action">Open Order</h6>                       
+                </div>
+                <div class="row number3">
+                    <h6>#4563</h6> 
+                    <h6>Pinko Evening Pink Dress (3)</h6>
+                    <h6 class="price">$280</h6>
+                    <h6><span class="status">On Request</span></h6>
+                    <h6 class="action">Open Order</h6>
+                </div>
+                <div class="row number4">
+                    <h6>#4563</h6>
+                    <h6>Twinset Cocktail Dress (3)</h6>
+                    <h6 class="price">$280</h6>
+                    <h6><span class="status">On Request</span></h6>
+                    <h6 class="action">Open Order</h6>
+                </div>
+                <div class="row number5">
+                    <h6>#4563</h6>
+                    <h6>Pinko Evening Dress (3)</h6>
+                    <h6 class="price">$280</h6>
+                    <h6><span class="status">On Request</span></h6>
+                    <h6 class="action">Open Order</h6>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
