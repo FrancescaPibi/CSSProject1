@@ -38,6 +38,10 @@ i {
 }
 
 /* nav */
+#burgerMenu {
+    visibility: hidden;
+}
+
 nav {
     grid-column: 1;
     grid-row: 1 / span 2;
@@ -319,4 +323,34 @@ main h2 {
 
 .recentOrders h6.action {
     text-decoration: underline;
+}
+
+/* phone */
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+
+    nav {
+        grid-template-columns: 1;
+        content-visibility: hidden;
+    }
+
+    #burgerMenu {
+        content-visibility: visible;
+    }
+
+    header {
+        grid-template-columns: 2;
+    }
+
+    main .dashboard, .recentOrders {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .salesTable .clothRow {
+        grid-template-columns: 5rem 1rem 1rem;
+    }
 }
