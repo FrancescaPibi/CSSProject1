@@ -351,8 +351,8 @@ main h2 {
         flex-direction: column;
     }
 
-    .salesTable .clothRow {
-        grid-template-columns: 5rem 1rem 1rem;
+    .salesTable .clothRow img {
+        display: none;
     }
 
     .recentOrders #mobBar {
@@ -369,7 +369,7 @@ main h2 {
         grid-template-rows: 1fr;
     }
 
-    .recentOrders .name {
+    .recentOrders .id {
         grid-column: 1;
         grid-row: 1;
     }
@@ -379,7 +379,7 @@ main h2 {
         grid-row: 1;
     }
 
-    .recentOrders #bar, .id, .price {
+    .recentOrders #bar, .name, .price {
         display: none;
     }
 
