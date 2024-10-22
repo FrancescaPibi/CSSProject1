@@ -37,11 +37,11 @@ i {
     padding-right: .5rem;
 }
 
-/* nav */
 #burgerMenu {
-    visibility: hidden;
+    display: none;
 }
 
+/* nav */
 nav {
     grid-column: 1;
     grid-row: 1 / span 2;
@@ -49,7 +49,6 @@ nav {
     flex-direction: column;
     gap: .5rem;
     padding: 1.5rem;
-    border-right: 2px solid var(--color-gray);
 }
 
 nav h1 {
@@ -99,6 +98,7 @@ header {
     align-items: center;
     gap: 1.5rem;
     padding: .9rem;
+    border-left: 2px solid var(--color-gray);
 }
 
 header div.profile {
@@ -280,6 +280,10 @@ main h2 {
     padding: .5rem;
 }
 
+.recentOrders #mobBar {
+    display: none;
+}
+
 .recentOrders .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -333,16 +337,13 @@ main h2 {
     }
 
     nav {
-        grid-template-columns: 1;
-        content-visibility: hidden;
+        display: none;
     }
 
     #burgerMenu {
-        content-visibility: visible;
-    }
-
-    header {
-        grid-template-columns: 2;
+        display: block;
+        justify-self: center;
+        padding-top: 1.5rem;
     }
 
     main .dashboard, .recentOrders {
@@ -352,5 +353,37 @@ main h2 {
 
     .salesTable .clothRow {
         grid-template-columns: 5rem 1rem 1rem;
+    }
+
+    .recentOrders #mobBar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background-color: var(--color-gray);
+        border-radius: 10px;
+        padding: .5rem;
+    }
+
+    .recentOrders .row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+    }
+
+    .recentOrders .name {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .recentOrders .action {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .recentOrders #bar, .id, .price {
+        display: none;
+    }
+
+    .status {
+        display: none !important;
     }
 }
