@@ -346,13 +346,21 @@ main h2 {
         padding-top: 1.5rem;
     }
 
-    main .dashboard, .recentOrders {
-        display: flex;
-        flex-direction: column;
+    .salesTable #categories {
+        column-gap: 1rem;
+    }
+
+    .salesTable .clothRow {
+        column-gap: 1rem;
     }
 
     .salesTable .clothRow img {
         display: none;
+    }
+
+    main .dashboard, .recentOrders {
+        display: flex;
+        flex-direction: column;
     }
 
     .recentOrders #mobBar {
