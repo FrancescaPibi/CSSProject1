@@ -242,7 +242,7 @@ main h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
-    column-gap: 5rem;
+    column-gap: 3rem;
     color: rgb(158, 156, 156);
 }
 
@@ -250,7 +250,7 @@ main h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
-    column-gap: 5rem;
+    column-gap: 3rem;
 }
 
 .salesTable div.clothRow img {
@@ -330,7 +330,7 @@ main h2 {
 }
 
 /* phone */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 350px) {
     body {
         display: grid;
         grid-template-columns: 15% 85%;
@@ -394,4 +394,8 @@ main h2 {
     .status {
         display: none !important;
     }
+}
+
+@media only screen and (max-width: 700px) {
+
 }
