@@ -402,15 +402,28 @@ main h2 {
         grid-row: 1;
     }
 
-    .recentOrders #bar, .name, .price {
-        display: none;
-    }
-
-    .status {
+    .recentOrders #bar, .name, .price, .status {
         display: none !important;
     }
 }
 
 @media only screen and (max-width: 700px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .dashboard .revenue img {
+        width: 100%;
+        height: auto;
+    }
+
+    .dashboard .sales img {
+        width: 60%;
+        height: auto;
+    }
+
+    .recentOrders .price, .status {
+        display: none !important;
+    }
 }
