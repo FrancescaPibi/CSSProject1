@@ -347,16 +347,30 @@ main h2 {
         padding-top: 1.5rem;
     }
 
-    .salesTable #categories {
+    .dashboard .revenue img {
+        width: 100%;
+        height: auto;
+    }
+
+    .dashboard .sales img {
+        width: 100%;
+        height: auto;
+    }
+
+    .dashboard .salesTable #categories {
         column-gap: 1rem;
     }
 
-    .salesTable .clothRow {
+    .dashboard .salesTable .clothRow {
         column-gap: 1rem;
     }
 
-    .salesTable .clothRow img {
+    .dashboard .salesTable .clothRow img {
         display: none;
+    }
+
+    .dashboard .salesTable .orderNumber {
+        justify-self: center;
     }
 
     main .dashboard, .recentOrders {
